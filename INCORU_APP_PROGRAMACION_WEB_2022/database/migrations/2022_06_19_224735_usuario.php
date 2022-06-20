@@ -27,7 +27,7 @@ class Usuario extends Migration
         });
         //
     }
-
+// 
     /**
      * Reverse the migrations.
      *
