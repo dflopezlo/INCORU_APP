@@ -13,11 +13,11 @@
 <nav class="navbar navbar-expand-lg bg-light">
 <div class="header-container">
     <a class="navbar-brand" href="#">
-      <img src="/C:/Users/danfe/OneDrive/Documentos/INCORU_APP/LOGO90.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="{{URL::asset('img/logoEmpresa.jpeg')}}" width="200" height="100" class="d-inline-block align-text-top">
+      <!--<img src="\INCORU_APP\INCORU_APP_PROGRAMACION_WEB_2022\img" alt="" width="30" height="24" class="d-inline-block align-text-top">-->
     </a>
   </div>
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">INCORU APP</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

@@ -14,7 +14,7 @@ class Usuario extends Migration
     public function up()
     {
         Schema::create('usuario', function (Blueprint $table) {
-            $table->string('cedula', 10)->primary();
+            $table->bigIncrements('id');
             $table->string('nombreUsu', 15);
             $table->string('celular', 10);
             $table->string('email')->unique();

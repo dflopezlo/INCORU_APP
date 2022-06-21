@@ -14,15 +14,15 @@ class Venta extends Migration
     public function up()
     {
         Schema::create('venta', function (Blueprint $table) {
-//            $table->codigoVenta();
-            $table->unsignedBigInteger('cedulaUsuario');
-            $table->unsignedBigInteger('codigoProd');
+            $table->id();
+            $table->unsignedBigInteger('idUsuario');
+            $table->unsignedBigInteger('idProd');
             $table->integer('cantidad');
             $table->decimal('total');
             $table->date('fecha');
-            $table->foreign('cedulaUsuario')->references('cedula')->on('usuario');
-            $table->foreign('codigoProd')->references('codigo')->on('producto');
-            $table->timestamps();
+            $table->foreign('idUsuario')->references('id')->on('usuario');
+            $table->foreign('idProd')->references('id')->on('producto');
+            $table->timestamps(); 
         });
     }
 
