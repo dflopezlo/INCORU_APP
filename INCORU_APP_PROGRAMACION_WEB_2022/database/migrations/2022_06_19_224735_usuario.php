@@ -21,7 +21,7 @@ class Usuario extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('direccion');
             $table->date('fechaNac');
-            $table->string('rol', 15);
+            $table->string('rol', 15); //se definen en las rutas
             $table->string('contrasena');
             $table->timestamps();
         });
@@ -35,6 +35,6 @@ class Usuario extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('usuario');
     }
 }
